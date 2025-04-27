@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit bootstrap="vendor/autoload.php">
+    <testsuites>
+        <testsuite name="Application Test Suite">
+            <directory>tests/unitary/class</directory>
+        </testsuite>
+    </testsuites>
+
+    <php>
+        <env name="APP_ENV" value="testing"/>
+    </php>
+
+    <logging>
+        <junit outputFile="tests/build/unit_report.xml"/>
+    </logging>
+</phpunit>
