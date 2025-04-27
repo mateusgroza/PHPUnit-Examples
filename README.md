@@ -11,11 +11,6 @@ To get started with PHPUnit, follow these steps:
 
 1. Install **PHP 8.3** (or higher).
 2. Install **Composer** globally if you haven't already. You can follow the installation instructions from [Composer's official site](https://getcomposer.org/download/).
-3. Install PHPUnit via Composer by running the following command in your project directory:
-
-    ```bash
-    composer install
-    ```
 
 ## Structure of `composer.json`
 
