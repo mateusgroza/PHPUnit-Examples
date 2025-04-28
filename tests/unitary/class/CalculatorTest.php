@@ -4,12 +4,13 @@ use PHPUnit\Framework\TestCase;
 use PHPUnit\Framework\Attributes\DataProvider;
 
 class CalculatorTest extends TestCase {
+
     #[DataProvider('additionProvider')]
-    public function testAddition($n1, $n2, $esperado): void {
+    public function testAddition($n1, $n2, $expected): void {
         $cal = new Calculator();
 
         $this->assertEquals(
-            $esperado,
+            $expected,
             $cal->Addition($n1, $n2)
         );
     }
